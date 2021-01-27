@@ -5,7 +5,7 @@ const Widget = styled.div`
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.secondary};
   background-color: ${({ theme }) => theme.colors.mainBg};
-  border-radius: 4px;
+  border-radius: 10px;
   overflow: hidden;
 
   h1,h2,h3 {
@@ -32,6 +32,35 @@ Widget.Content = styled.div`
   ul {
     list-style: none;
     padding: 0;
+  }
+`
+
+Widget.Form = styled.form`
+  display: flex;
+  flex-flow: column;
+  
+  input, button {
+    border-radius: 10px;
+    height: 40px;
+    margin: 10px;
+    outline-style: none;
+  }
+
+  input {
+    border-color: #39c6fa;
+    text-align: center;
+  }
+
+  input ::placeholder,
+  ::-webkit-input-placeholder {
+    color: white;
+  }
+  :-ms-input-placeholder {
+     color: white;
+  }
+
+  button {
+    background-color: ${({ theme }) => theme.colors.primary};
   }
 `
 

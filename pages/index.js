@@ -5,8 +5,13 @@ import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import QuizLogo from '../src/components/QuizLogo';
 import db from '../db.json';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = useState('');
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
@@ -17,19 +22,31 @@ export default function Home() {
           </Widget.Header>
           <Widget.Content>
             <p>{db.description}</p>
+            <Widget.Form onSubmit={(e) => {
+              e.preventDefault();                         
+              router.push(`/quiz?name=${name}`)
+            }}> 
+              <input 
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
+                placeholder='-DIGITE SEU NOME-'
+              /> 
+              <button type='submit' disabled={name.length === 0} >
+              Bora Jogar {name}
+              </button>
+            </Widget.Form>
           </Widget.Content>
         </Widget>
 
         <Widget>
           <Widget.Content>
-            <h1>Quizes da Galera</h1>
-
-            <p>lorem ipsum dolor sit amet...</p>
+            <p>Quiz da massa</p>
           </Widget.Content>
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/sandrolaxx" />
+      <GitHubCorner projectUrl='https://github.com/sandrolaxx' />
     </QuizBackground>
   );
 }
