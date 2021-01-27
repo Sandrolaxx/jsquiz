@@ -44,23 +44,22 @@ Widget.Form = styled.form`
     height: 40px;
     margin: 10px;
     outline-style: none;
+    color: #FFFFFF;
+    background-color: ${({ theme }) => theme.colors.primary};
   }
 
   input {
-    border-color: #39c6fa;
-    text-align: center;
+    background-color: ${({ theme }) => theme.colors.mainBg};
+    border: 1px solid ${({ theme }) => theme.colors.secondary};
+    text-align: center;  
   }
 
   input ::placeholder,
   ::-webkit-input-placeholder {
-    color: white;
+    color: #FFFFFF;
   }
   :-ms-input-placeholder {
-     color: white;
-  }
-
-  button {
-    background-color: ${({ theme }) => theme.colors.primary};
+     color: #FFFFFF;
   }
 `
 
