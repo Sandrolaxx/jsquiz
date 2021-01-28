@@ -4,6 +4,8 @@ import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import QuizLogo from '../src/components/QuizLogo';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 import db from '../db.json';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
@@ -26,15 +28,15 @@ export default function Home() {
               e.preventDefault();                         
               router.push(`/quiz?name=${name}`)
             }}> 
-              <input 
-                onChange={(e) => {
-                  setName(e.target.value);
-                }}
-                placeholder='-DIGITE SEU NOME-'
-              /> 
-              <button type='submit' disabled={name.length === 0} >
-              Bora Jogar {name}
-              </button>
+              <Input
+                name="nomeDoUsuario"
+                onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
+                placeholder="Diz ai seu nome"
+                value={name}
+              />
+               <Button type="submit" disabled={name.length === 0}>
+                {`Jogar ${name}`}
+              </Button>
             </Widget.Form>
           </Widget.Content>
         </Widget>
