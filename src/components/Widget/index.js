@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 const Widget = styled.div`
-  margin-top: 24px;
-  margin-bottom: 24px;
-  border: 1px solid ${({ theme }) => theme.colors.secondary};
+  margin-top: 12px;
+  margin-bottom: 20px;
+  border: 4px solid ${({ theme }) => theme.colors.primary};
   background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: 10px;
   overflow: hidden;
@@ -17,12 +17,50 @@ const Widget = styled.div`
   p {
     font-size: 14px;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.2;
   }
+
+  :nth-last-child(2) {
+    animation: pulse 3s linear infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+        border-top: 4px solid ${({ theme }) => theme.colors.secondary};
+        border-right: 4px solid ${({ theme }) => theme.colors.primary};
+        border-bottom: 4px solid ${({ theme }) => theme.colors.primary};
+        border-left: 4px solid ${({ theme }) => theme.colors.primary};
+    }
+    25% {
+        border-top: 4px solid ${({ theme }) => theme.colors.secondary};
+        border-right: 4px solid ${({ theme }) => theme.colors.secondary};
+        border-bottom: 4px solid ${({ theme }) => theme.colors.primary};
+        border-left: 4px solid ${({ theme }) => theme.colors.primary};
+    }
+    50% {
+        border-top: 4px solid ${({ theme }) => theme.colors.primary};
+        border-right: 4px solid ${({ theme }) => theme.colors.secondary};
+        border-bottom: 4px solid ${({ theme }) => theme.colors.secondary};
+        border-left: 4px solid ${({ theme }) => theme.colors.primary};
+    }
+    75% {
+        border-top: 4px solid ${({ theme }) => theme.colors.primary};
+        border-right: 4px solid ${({ theme }) => theme.colors.primary};
+        border-bottom: 4px solid ${({ theme }) => theme.colors.secondary};
+        border-left: 4px solid ${({ theme }) => theme.colors.secondary};
+    }
+    100% {
+        border-top: 4px solid ${({ theme }) => theme.colors.secondary};
+        border-right: 4px solid ${({ theme }) => theme.colors.primary};
+        border-bottom: 4px solid ${({ theme }) => theme.colors.primary};
+        border-left: 4px solid ${({ theme }) => theme.colors.primary};
+      }
+    }
+
 `
 
 Widget.Content = styled.div`
-  padding: 24px 32px 32px 32px;
+  padding: 14px 22px 22px 22px;
   & > *:first-child {
     margin-top: 0;
   }
@@ -33,6 +71,15 @@ Widget.Content = styled.div`
     list-style: none;
     padding: 0;
   }
+  h1{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    margin-bottom: 15px;
+  }
+
 `
 
 Widget.Form = styled.form`
@@ -42,7 +89,6 @@ Widget.Form = styled.form`
   input, button {
     border-radius: 10px;
     height: 40px;
-    margin: 10px;
     outline-style: none;
     color: #FFFFFF;
     background-color: ${({ theme }) => theme.colors.primary};
@@ -51,7 +97,7 @@ Widget.Form = styled.form`
   input {
     background-color: ${({ theme }) => theme.colors.mainBg};
     border: 1px solid ${({ theme }) => theme.colors.secondary};
-    text-align: center;  
+    text-align: center;    
   }
 
   input ::placeholder,
@@ -65,7 +111,7 @@ Widget.Form = styled.form`
 
 Widget.Header = styled.header`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding: 18px 32px;
   background-color: ${({ theme }) => theme.colors.primary};

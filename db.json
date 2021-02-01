@@ -1,33 +1,132 @@
 {
-  "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
-  "title": "Quiz CSS da Alura",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "bg": "https://images5.alphacoders.com/102/1022371.jpg",
+  "title": "CyberQuiz 2077 da Alura",
+  "description": "Teste seus conhecimentos sobre o cyberVacilo 2077 e todos os seus bugs.",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "image": "https://media.giphy.com/media/LPly438jqDFXPgKwAv/source.gif",
+      "title": "Qual o nome do seu parça que aparece logo no inicio do game?",
+      "description": "Vamos começar do básico..",
+      "answer": 0,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Jaquito Welles",
+        "Anders Hellman",
+        "Barry Lewis",
+        "Paulo Silveira"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://media.giphy.com/media/VJ5femCn8ttPLenfFb/source.gif",
+      "title": "Nome do rockerboy mais famoso de NightCity e que foi muito bem interpretado por Keanu Reeves",
+      "description": "Quem sabe se traduzir...",
+      "answer": 2,
+      "alternatives": [
+        "Marcos Jeaves",
+        "Mario Souto",
+        "Johnny Silverhand",
+        "João mão de prata"
+      ]
+    },
+    {
+      "image": "https://media1.tenor.com/images/0434c9ee6a3a4d1e5a8d43943e191c47/tenor.gif",
+      "title": "Nome da personagem que produz as melhores ND's(Neuro Dança)  de NightCity",
+      "description": "Essa que também abalou muitos corações no lançamento do jogo huhasuah",
+      "answer": 2,
+      "alternatives": [
+        "Hanako Arasaka",
+        "Lizzy Wizzy",
+        "Judy Alvarez",
+        "Juliana Amoasei"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/1n5EPsbWNdkB8UM1Di/source.gif",
+      "title": "Corporação especializada em serviços médicos de resposta rápida. ",
+      "description": "E vamos de saúde...",
       "answer": 0,
       "alternatives": [
-        "background: linear-gradient(#e66465, #9198e5);",
-        "background: gradient(#e66465, #9198e5);"
+        "Trauma Team",
+        "SUS",
+        "Medical Life",
+        "Kang Tao"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/3R30XMeokyyLzZcu3l/source.gif",
+      "title": "Nome da banda de Johnny Silverhand",
+      "description": "Pra que curte boa música...",
+      "answer": 1,
+      "alternatives": [
+        "Aviões do Forró",
+        "SAMURAI",
+        "Limp Bizkit",
+        "Rebel Pach"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/oopbuZffeitXqOw5Ag/source.gif",
+      "title": "Maior inimigo de Johnny e o vilão mais casca grossa de NightCity",
+      "description": "Não curte carne...",
+      "answer": 0,
+      "alternatives": [
+        "Adam Smasher",
+        "Arthur Jenkins",
+        "Mitch Anderson",
+        "Declan Griffin"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/QaZCCWGi3adi4KzApF/source.gif",
+      "title": "Nome do vacilão que te trai depois de termos pego o relic",
+      "description": "Traira",
+      "answer": 1,
+      "alternatives": [
+        "Péricles",
+        "Dexter DeShawn",
+        "Fred Palmer",
+        "Notorious Big"
+      ]
+    },
+    {
+      "image": "https://media1.tenor.com/images/b6ed5371dc4bb14cf2b78c2c5988b120/tenor.gif",
+      "title": "Nome do personagem Brasileiro presente no jogo",
+      "description": "Me lembra o saudoso bozo",
+      "answer": 2,
+      "alternatives": [
+        "Bob the clown",
+        "Goro Takemura",
+        "Ozob Bozo",
+        "Weldon Holt"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/GuLLbKFIAfqMw1Y7oc/source.gif",
+      "title": "Nome do fundador de NightCity",
+      "description": "Essa é pra aquecer",
+      "answer": 0,
+      "alternatives": [
+        "Richard Night",
+        "Robert Art",
+        "Cristovão Night",
+        "Abel Fernand"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/jn7MvkHhwnZi7N99jn/giphy.gif",
+      "title": "Gangue de nomades muito parceiros",
+      "description": "Essa é pra aquecer",
+      "answer": 3,
+      "alternatives": [
+        "Tyger Claws",
+        "Valentinos",
+        "Animals",
+        "Aldecaldos"
       ]
     }
   ],
   "external": [
-    ""
+    "https://imersao-react-project.brenonortega.vercel.app/",
+    "https://aluraquiz-wow.yuriramosc.vercel.app/"
   ],
   "theme": {
     "colors": {

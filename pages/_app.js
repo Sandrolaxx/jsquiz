@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
+    height: 100%;
     margin: 0;
     padding: 0;
     /* New styles */
@@ -31,9 +32,9 @@ const theme = db.theme;
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Head>
+      <Head>    
         <title>
-          JSquiz - NextJS
+          CyberQuiz-Alura
         </title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet" />
