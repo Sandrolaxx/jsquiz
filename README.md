@@ -76,3 +76,26 @@ export default () => (
 ```
 
 </details>
+
+## Autor
+
+* **Sandro Matheus Ramos** 
+*[Linkedin](https://www.linkedin.com/in/sandro-ramos-5a53011b3/)
+
+## Quiz Images
+
+*Home screen
+
+![Captura de tela de 2021-02-01 19-35-15](https://user-images.githubusercontent.com/61207420/106529271-faddaa80-64c8-11eb-995e-e6f5853e3cfc.png)
+
+*Loading
+
+![Captura de tela de 2021-02-01 19-35-38](https://user-images.githubusercontent.com/61207420/106529276-fd400480-64c8-11eb-87b0-48e2afd5152e.png)
+
+*Questions
+
+![Captura de tela de 2021-02-01 19-36-49](https://user-images.githubusercontent.com/61207420/106529280-fe713180-64c8-11eb-95e8-33e046962f76.png)
+
+*Final screen
+
+![Captura de tela de 2021-02-01 19-38-31](https://user-images.githubusercontent.com/61207420/106529283-ffa25e80-64c8-11eb-8b28-149a36c0bf33.png)
